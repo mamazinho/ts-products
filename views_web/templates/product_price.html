@@ -1,0 +1,25 @@
+{% extends 'home.html' %}
+{% block content %}
+<body>
+    <h1>{{title}}</h1>
+    
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>Product_id</th>
+            <th>Price</th>
+            <th>Created_at</th>
+        </thead>
+        <tbody>
+            {% for item in model %}
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.product_id}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.created_at}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+{% endblock %}

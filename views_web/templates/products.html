@@ -1,0 +1,41 @@
+{% extends 'home.html' %}
+{% block content %}
+<body>
+    <h1>{{title}}</h1>
+    
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>Seller Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Brand</th>
+            <th>Status</th>
+            <th>Created At</th>
+            <th>Update At</th>
+            <th>Actual Stock</th>
+            <th>Actual Price</th>
+            <th>Gtin</th>
+            <th>Active</th>
+        </thead>
+        <tbody>
+            {% for item in model %}
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.seller_id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.brand}}</td>
+                <td>{{item.status}}</td>
+                <td>{{item.created_at}}</td>
+                <td>{{item.updated_at}}</td>
+                <td>{{item.actual_stock}}</td>
+                <td>{{item.actual_price}}</td>
+                <td>{{item.gtin}}</td>
+                <td>{{item.active}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+{% endblock %}

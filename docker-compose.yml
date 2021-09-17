@@ -1,0 +1,18 @@
+version: '3'
+services:
+  db_postgres:
+    image: postgres:latest
+    restart: always
+    ports:
+        - "5432:5432"
+    volumes:
+        - postgres_db_volume:/var/lib/postgresql/data
+    container_name: postgres_db
+
+    environment:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: olist123
+        POSTGRES_DB: postgres
+
+volumes:
+    postgres_db_volume:

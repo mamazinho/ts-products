@@ -1,0 +1,7 @@
+- Criação da pasta views (OK)
+- Criação dos arquivos internos da pasta views / um para cada assunto - grupo (OK)
+- Refatoração da category
+- Refatoração da product
+- Lembrar da verificação das importações e das funcionalidades
+- Comentar o que cada metodo faz
+- Deixar na main apenas os testes, separados. 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body style="margin: 25px; text-align: center; font-size: 22px; font-family: 'Newsreader', serif;">
+    
+    <h1 style="color:blue;">Products - TechStart</h1>
+    <p style="font-weight: bold;">Projeto realizado pelos participantes do time TechStart 2ª edição, com o intuito de "replicar" algumas funcionalidades básicas do Olist.</p>
+   
+    {% block content %}
+    <div>
+        <p>Products é responsável por: </p>
+        <ul style="list-style-type: none; text-decoration: underline;">
+            <li>Cadastrar produtos de um novo ou antigo seler</li>
+            <li>Alterar informações de produtos</li>
+            <li>Inativar um produto</li>
+            <li>Receber informações de catalogo (GTIN já existente permite que o seller cadastre apenas informações unicas - ex: estoque</li>        
+        </ul>
+    </div>
+    {% endblock %}
+
+</body>
+</html>

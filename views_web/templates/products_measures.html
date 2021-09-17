@@ -1,0 +1,29 @@
+{% extends 'home.html' %}
+{% block content %}
+<body>
+    <h1>{{title}}</h1>
+    
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>Product Id</th>
+            <th>Width Value</th>
+            <th>Height Value</th>
+            <th>Lenght Value</th>
+            <th>Weight Value</th>
+        </thead>
+        <tbody>
+            {% for item in model %}
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.product_id}}</td>
+                <td>{{item.width_value}}</td>
+                <td>{{item.height_value}}</td>
+                <td>{{item.length_value}}</td>
+                <td>{{item.weight_value}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+{% endblock %}

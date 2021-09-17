@@ -1,0 +1,23 @@
+{% extends 'home.html' %}
+{% block content %}
+<body>
+    <h1>{{title}}</h1>
+    
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+        </thead>
+        <tbody>
+            {% for item in model %}
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.description}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+{% endblock %}
